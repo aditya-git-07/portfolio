@@ -15,7 +15,7 @@ The website serves as my professional identity on the web — simple, fast, and 
 ---
 
 ## 🚀 Live Demo
-🔗 **Website:** [https://aditya-git-07.github.io/](https://aditya-git-07.github.io/)
+🔗 **Website:** [https://aditya-git-07.github.io/portfolio/](https://aditya-git-07.github.io/portfolio/)
 
 ---
 
