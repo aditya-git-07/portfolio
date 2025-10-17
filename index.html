@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <div class="loader-text">Loading Portfolio...</div>
+        </div>
+    </div>
+
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Cursor Follower -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Aditya</span>
+                <div class="logo-dot"></div>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-greeting">
+                    <span class="greeting-text">Hello, I'm</span>
+                </div>
+                <h1 class="hero-name">
+                    <span class="name-text">Aditya</span>
+                    <div class="name-underline"></div>
+                </h1>
+                <div class="hero-title">
+                    <span class="typing-text"></span>
+                    <span class="cursor-blink">|</span>
+                </div>
+                <p class="hero-description">
+                    Computer Science Engineering Student &amp; Tech Enthusiast
+                </p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">
+                        <span>About Me</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <span>My Work</span>
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-avatar">
+                    <div class="avatar-bg"></div>
+                    <div class="avatar-content">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                    <div class="avatar-ring"></div>
+                </div>
+                <div class="floating-icons">
+                    <div class="icon-item" style="--delay: 0s">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="icon-item" style="--delay: 0.5s">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="icon-item" style="--delay: 1s">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="icon-item" style="--delay: 1.5s">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <div class="card-glow"></div>
+                        <p class="about-bio">
+                            Hey, I'm Aditya — a tech enthusiast who loves turning "what if" ideas into working code. I'm currently pursuing Computer Science Engineering and constantly exploring how tech can make everyday systems smarter and more sustainable. I'm the kind of person who dives deep into something new — whether it's AI, automation, or random experiments that end up teaching me more than any tutorial ever could. I enjoy working in collaborative, fast-paced environments where creativity meets logic, and I'm always up for challenges that push me to think, break, and rebuild things better.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <div class="stat-number" data-target="15">0</div>
+                                <div class="stat-label">Projects Completed</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-target="1">0</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-target="25">0</div>
+                                <div class="stat-label">Code Commits</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What I can do</span>
+                <h2 class="section-title">Skills &amp; Expertise</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Technical Skills
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="90">
+                            <div class="skill-header">
+                                <span class="skill-name">HTML5 &amp; CSS3</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-header">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <div class="skill-header">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="75">
+                            <div class="skill-header">
+                                <span class="skill-name">C Programming</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="88">
+                            <div class="skill-header">
+                                <span class="skill-name">Web Development</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="82">
+                            <div class="skill-header">
+                                <span class="skill-name">UI/UX Design</span>
+                                <span class="skill-percent">82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-palette"></i>
+                        Creative Skills
+                    </h3>
+                    <div class="creative-skills">
+                        <div class="creative-skill">
+                            <div class="skill-icon">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <h4>Photography</h4>
+                            <p>Capturing moments through creative lens</p>
+                            <a href="https://in.pinterest.com/adiwithcam/_created" target="_blank" class="skill-link">
+                                <i class="fab fa-pinterest"></i>
+                                View Portfolio
+                            </a>
+                        </div>
+                        <div class="creative-skill">
+                            <div class="skill-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <h4>Videography</h4>
+                            <p>Creating engaging visual stories</p>
+                        </div>
+                        <div class="creative-skill">
+                            <div class="skill-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h4>Graphic Design</h4>
+                            <p>Designing beautiful user interfaces</p>
+                        </div>
+                        <div class="creative-skill">
+                            <div class="skill-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4>Problem Solving</h4>
+                            <p>Creative solutions to complex challenges</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">My latest work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="card-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <div class="project-status">Featured</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">SmartSpend</h3>
+                        <p class="project-description">
+                            A comprehensive money management solution for students to track expenses and manage payments efficiently. Features interactive charts, expense tracking, and payment reminders.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Chart.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://aditya-git-07.github.io/smartspend/" target="_blank" class="project-link primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/aditya-git-07/smartspend" target="_blank" class="project-link secondary">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-description">
+                            This responsive portfolio website showcasing modern web development skills with smooth animations and dark mode.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://aditya-git-07.github.io/" target="_blank" class="project-link primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/aditya-git-07/portfolio" target="_blank" class="project-link secondary">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Data Analysis Dashboard</h3>
+                        <p class="project-description">
+                            Interactive dashboard for analyzing student data including sleep patterns, study time, and academic performance.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Data Viz</span>
+                            <span class="tech-tag">Web Dev</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="project-link secondary">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get in touch</span>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="card-glow"></div>
+                        <h3>Let's work together</h3>
+                        <p>I'm always open to discussing new opportunities, creative projects, or just having a chat about technology and innovation.</p>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="contact-label">Email</span>
+                                    <span class="contact-value">adityanxndan@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="contact-label">Location</span>
+                                    <span class="contact-value">India</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-pinterest"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="contact-label">Photography</span>
+                                    <a href="https://in.pinterest.com/adiwithcam/_created" target="_blank" class="contact-value">View Portfolio</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Subject</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <span class="logo-text">Aditya</span>
+                        <div class="logo-dot"></div>
+                    </div>
+                    <p class="footer-text">
+                        Turning ideas into reality through code &amp; creativity.
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/adityanxndan/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/aditya-git-07" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://in.pinterest.com/adiwithcam/_created" target="_blank" class="social-link">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                        <a href="https://aditya-git-07.github.io/smartspend/" target="_blank" class="social-link">
+                            <i class="fas fa-wallet"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aditya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Message Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out. I'll get back to you soon.</p>
+            <button class="btn btn-primary" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
